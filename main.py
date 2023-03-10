@@ -88,3 +88,55 @@ elif lovescore > 40 and lovescore < 50:
 else:
     print(f"Your score is {lovescore}.")
 
+#treasure island
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+crossroad = input("You're at a crossroad. Which way do you want to go? Type 'left' or 'right'.")
+if crossroad == "left":
+  lakepoint = input("You're now at a lake. Do you want to swim or wait for the boat? Type 'swim' or 'wait'")
+  if lakepoint == "swim":
+    print("You got attacked by a trout and died. Game Over.")
+  elif lakepoint == "wait":
+    door = input("The boat has arrived and brought you to the island. Now there are three doors. Which door do you choose? Type 'red' , 'blue', or 'yellow'.")
+    if door == "red":
+      print("Flames burst out and burned you. You have died. Game over.")
+    elif door == "blue":
+      print("A beast came out and ate your face and you died. Game over.")
+    elif door == "yellow":
+      print("There's the treasure! You win! Congrats!")
+elif crossroad == "right":
+  print("You fell into a hole and died. Game Over.")    
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height > 120:
+  print("You can ride the rollercoaster!")
+else:
+  print("Sorry, you have to be taller before you can ride.")
